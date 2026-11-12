@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BandingHarga — Bandingkan Harga Antar Marketplace</title>
+<meta name="description" content="BandingHarga membantu kamu membandingkan harga produk di Shopee, TikTok Shop, Tokopedia, Blibli, dan Lazada dalam satu tempat. Segera hadir.">
+<style>
+  :root{
+    --bg:#0f172a; --card:#111c33; --text:#e2e8f0; --muted:#94a3b8;
+    --accent:#f97316; --accent2:#22c55e; --border:#1e293b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+  header{padding:20px 24px;display:flex;align-items:center;gap:10px;max-width:1000px;width:100%;margin:0 auto}
+  .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#fb923c);display:grid;place-items:center;font-weight:800;color:#fff}
+  .brand{font-weight:700;font-size:1.2rem}
+  main{flex:1;max-width:1000px;width:100%;margin:0 auto;padding:40px 24px}
+  .badge{display:inline-block;padding:6px 14px;border-radius:999px;background:rgba(249,115,22,.15);color:var(--accent);font-size:.85rem;font-weight:600;margin-bottom:20px}
+  h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin-bottom:16px}
+  h1 span{color:var(--accent)}
+  .lead{color:var(--muted);font-size:1.1rem;max-width:620px;margin-bottom:32px}
+  .search{display:flex;gap:8px;max-width:560px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:8px;margin-bottom:12px}
+  .search input{flex:1;background:transparent;border:0;color:var(--text);font-size:1rem;padding:10px;outline:none}
+  .search button{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 18px;font-weight:600;cursor:not-allowed;opacity:.85}
+  .hint{color:var(--muted);font-size:.85rem;margin-bottom:48px}
+  .markets{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:56px}
+  .chip{padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:var(--card);font-size:.9rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
+  .card .ic{font-size:1.6rem;margin-bottom:10px}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:.95rem}
+  footer{border-top:1px solid var(--border);padding:24px;text-align:center;color:var(--muted);font-size:.85rem}
+  footer p+p{margin-top:6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">B</div>
+  <div class="brand">BandingHarga</div>
+</header>
+
+<main>
+  <div class="badge">🚧 Segera Hadir</div>
+  <h1>Satu pencarian,<br><span>harga terbaik</span> dari semua marketplace.</h1>
+  <p class="lead">BandingHarga membantu kamu membandingkan harga produk yang sama di berbagai marketplace Indonesia. Urutkan berdasarkan harga termurah atau rating tertinggi, lalu beli di toko pilihanmu.</p>
+
+  <div class="search" aria-disabled="true">
+    <input type="text" placeholder="Contoh: Redmi Note 14 8/256" disabled>
+    <button disabled>Bandingkan</button>
+  </div>
+  <p class="hint">Fitur pencarian sedang dalam pengembangan.</p>
+
+  <div class="markets">
+    <span class="chip">Shopee</span>
+    <span class="chip">TikTok Shop</span>
+    <span class="chip">Tokopedia</span>
+    <span class="chip">Blibli</span>
+    <span class="chip">Lazada</span>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="ic">🔍</div><h3>Cari sekali</h3><p>Ketik nama produk, kami tampilkan 5–10 penawaran dari berbagai marketplace.</p></div>
+    <div class="card"><div class="ic">💰</div><h3>Urutkan harga</h3><p>Lihat mana yang paling murah tanpa buka aplikasi satu per satu.</p></div>
+    <div class="card"><div class="ic">⭐</div><h3>Urutkan rating</h3><p>Pilih toko dengan rating dan ulasan terbaik supaya belanja lebih aman.</p></div>
+    <div class="card"><div class="ic">🤖</div><h3>Dibantu AI</h3><p>Produk yang sama dari toko berbeda dicocokkan otomatis agar perbandingannya akurat.</p></div>
+  </div>
+</main>
+
+<footer>
+  <p><strong>Pengungkapan afiliasi:</strong> BandingHarga dapat menerima komisi dari pembelian melalui tautan di situs ini, tanpa biaya tambahan bagi kamu.</p>
+  <p>© 2026 BandingHarga. Nama marketplace yang disebut adalah milik pemiliknya masing-masing.</p>
+</footer>
+</body>
+</html>
